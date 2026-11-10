@@ -1,0 +1,42 @@
+<!doctype html>
+<!-- og.png(1200×630 공유 미리보기) 원본 — 찍는 법은 README '공유 그림 다시 만들기' -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans+KR:wght@500;700&display=block">
+  <style>
+    html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+    body {
+      position: relative;
+      background:
+        radial-gradient(ellipse 55% 70% at 82% 45%, rgba(36, 87, 245, 0.38), transparent 70%),
+        radial-gradient(ellipse 30% 40% at 90% 85%, rgba(63, 208, 222, 0.18), transparent 70%),
+        #070d18;
+      color: #f4f6f9;
+      font-family: "IBM Plex Sans KR", sans-serif;
+    }
+    body::before {
+      content: ""; position: absolute; inset: 0;
+      background-image: linear-gradient(rgba(106,141,255,.09) 1px, transparent 1px), linear-gradient(90deg, rgba(106,141,255,.09) 1px, transparent 1px);
+      background-size: 48px 48px;
+      -webkit-mask-image: radial-gradient(ellipse 75% 80% at 70% 50%, #000 20%, transparent 90%);
+    }
+    .logo { position: absolute; left: 80px; top: 72px; height: 54px; }
+    .sym { position: absolute; right: 70px; top: 120px; width: 400px; opacity: 0.95; filter: drop-shadow(0 0 40px rgba(63,208,222,.25)); }
+    h1 { position: absolute; left: 80px; top: 214px; margin: 0; font: 700 76px/1.1 "Chakra Petch", "IBM Plex Sans KR", sans-serif; letter-spacing: -0.035em; }
+    h1 span { background: linear-gradient(90deg, #6a8dff, #3fd0de); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .en { position: absolute; left: 82px; top: 408px; font: 600 30px "Chakra Petch", sans-serif; opacity: .9; }
+    .foot { position: absolute; left: 80px; right: 80px; bottom: 56px; display: flex; justify-content: space-between; align-items: baseline;
+      border-top: 1px solid rgba(154,166,184,.25); padding-top: 22px; font: 500 22px "IBM Plex Sans KR", sans-serif; color: #c9d2e0; }
+    .foot b { color: #f4f6f9; font-weight: 700; }
+    .foot .mono { font: 500 20px "IBM Plex Mono", monospace; color: #3fd0de; letter-spacing: .04em; }
+  </style>
+</head>
+<body>
+  <img class="sym" src="../assets/logo/axia-symbol-color-on-dark.svg" alt="">
+  <img class="logo" src="../assets/logo/axia-dynamics-horizontal-color-on-dark.svg" alt="AXIA Dynamics">
+  <h1>가공의 모든 축을<br><span>하나로</span></h1>
+  <p class="en">Every Axis, One Intelligence.</p>
+  <div class="foot"><span><b>AXIA MX™</b> — 정밀가공 공장 AI 운영 시스템</span><span class="mono">axiadynamics.com</span></div>
+</body>
+</html>
