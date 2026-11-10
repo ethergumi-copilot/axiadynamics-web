@@ -17,7 +17,7 @@
 
 ## 자주 고치는 것
 
-- **문의 메일 주소** — `index.html` 에서 `contact@axiadynamics.com` 을 찾아 모두 바꾼다(JSON-LD `email` · `mailto:` 두 곳 · 화면 글자 · 복사 단추 `data-mail` · 다섯 군데).
+- **문의 메일 주소** — `index.html` 에서 `yhjung@axiadynamics.com` 을 찾아 모두 바꾼다(JSON-LD `email` · `mailto:` 두 곳 · 화면 글자 · 복사 단추 `data-mail` · 다섯 군데).
 - **글** — `index.html` 에서 바로. 글의 근거 = 브랜드 기본안(MES 저장소 `MCT_MES 설계/02_사업전략/AXIA_Dynamics_브랜드_기본안_v1_20261018.md`). 확인되지 않은 기능 · 숫자 · 고객 이름은 쓰지 않는다.
 - **표기 규칙** — 제품은 늘 `AXIA MX`(AXIA 단독 ❌) · 상표 등록 전에는 ™ 만(® ❌) · 한글 회사명 '악시아 다이내믹스'.
 - **법인 등기 뒤** — 바닥(`<footer>`)에 상호 · 대표자 · 사업자등록번호 · 주소 줄을 더한다.
