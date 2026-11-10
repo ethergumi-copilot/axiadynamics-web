@@ -20,6 +20,27 @@
     items.forEach((el) => el.classList.add("in"));
   }
 
+  // 사실 띠 — 한 벌 더 붙여 왼쪽으로 이어 흐른다(폰 = CSS 가 2열로 · 움직임 줄이기 = 붙이지 않고 손으로 넘기기)
+  const track = document.querySelector(".facts-track");
+  if (track && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    Array.from(track.children).forEach((el) => {
+      const c = el.cloneNode(true);
+      c.classList.add("clone");
+      c.setAttribute("aria-hidden", "true");
+      track.appendChild(c);
+    });
+    track.classList.add("marquee");
+    track.parentElement.classList.add("marquee-on");
+    // 빠르기 = 초당 40px(칸 수 · 글꼴이 바뀌어도 같은 빠르기) — 폰(2열)에서는 재지 않는다
+    const wide = window.matchMedia("(min-width: 761px)");
+    const setSpeed = () => {
+      if (wide.matches) track.style.setProperty("--facts-dur", `${Math.round(track.scrollWidth / 2 / 40)}s`);
+    };
+    setSpeed();
+    if (document.fonts) document.fonts.ready.then(setSpeed);
+    if (wide.addEventListener) wide.addEventListener("change", setSpeed);
+  }
+
   // 상단 바 — 내리면 흐린 바탕 · 지금 보는 칸 표시
   const nav = document.querySelector(".nav");
   const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 12);
